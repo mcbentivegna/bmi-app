@@ -1,26 +1,44 @@
-import React from 'react'
-import logo from './logo.svg'
+import React, { Component } from 'react'
 import './App.css'
+import InputForm from './Components/InputForm.js'
+import Header from './Components/Header.js'
+import DisplayBMI from './Components/DisplayBMI.js'
 
-function App () {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  )
+class App extends Component {
+  state = {
+    BMI: 0
+  };
+
+  calculateBMI = (height, weight) => {
+   const BMI = 703*weight/(height*height)
+   const roundedBMI = Math.round(BMI*100)/100
+   return roundedBMI
+  }
+
+  handleSubmit = (BMI) => {
+    this.setState( prevState => {
+      return {
+        BMI
+      }
+    })
+  }
+  
+  render () {
+    console.log(this.state)
+    return (
+      <div className="App">
+        <Header/>
+        <InputForm
+          handleSubmit = {this.handleSubmit}
+          calculateBMI = {this.calculateBMI}
+        />
+        <p></p>
+        <DisplayBMI
+          height = {this.state.BMI}
+        />
+      </div>
+    )
+  }
 }
 
 export default App
