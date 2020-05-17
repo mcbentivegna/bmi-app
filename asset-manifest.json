@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/course-directory/static/css/main.bbb482cf.chunk.css",
+    "main.js": "/course-directory/static/js/main.135ecea9.chunk.js",
+    "main.js.map": "/course-directory/static/js/main.135ecea9.chunk.js.map",
+    "runtime-main.js": "/course-directory/static/js/runtime-main.4157ec61.js",
+    "runtime-main.js.map": "/course-directory/static/js/runtime-main.4157ec61.js.map",
+    "static/js/2.04b8f18b.chunk.js": "/course-directory/static/js/2.04b8f18b.chunk.js",
+    "static/js/2.04b8f18b.chunk.js.map": "/course-directory/static/js/2.04b8f18b.chunk.js.map",
+    "index.html": "/course-directory/index.html",
+    "precache-manifest.964b73ae2d3401eda67777a22dc8c5c4.js": "/course-directory/precache-manifest.964b73ae2d3401eda67777a22dc8c5c4.js",
+    "service-worker.js": "/course-directory/service-worker.js",
+    "static/css/main.bbb482cf.chunk.css.map": "/course-directory/static/css/main.bbb482cf.chunk.css.map",
+    "static/js/2.04b8f18b.chunk.js.LICENSE.txt": "/course-directory/static/js/2.04b8f18b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4157ec61.js",
+    "static/js/2.04b8f18b.chunk.js",
+    "static/css/main.bbb482cf.chunk.css",
+    "static/js/main.135ecea9.chunk.js"
+  ]
+}
