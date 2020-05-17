@@ -1,14 +1,26 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const DisplayBMI = ({ height }) => {
+const DisplayBMI = ({ BMI, BMICategories, category }) => {
   return (
-    <h1>{height}</h1>
+    <div>
+      <h1>{BMI}</h1>
+      <p></p>
+      <ul className = 'definitions'>
+        {BMICategories.map((cat) => {
+          const selected = category === null ? false : cat.category === category.category
+          return <li key={cat.category} className = {selected ? 'selected-category' : null}> {cat.text} </li>
+        })
+        }
+      </ul>
+    </div>
   )
 }
 
 DisplayBMI.propTypes = {
-  height: PropTypes.number
+  BMI: PropTypes.number,
+  BMICategories: PropTypes.arrayOf(PropTypes.object),
+  category: PropTypes.object
 }
 
 export default DisplayBMI

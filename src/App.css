@@ -49,6 +49,10 @@ button {
   font-size: var(--secondary-font-size);
   color: var(--secondary-color)}
 
+.selected-category {
+  font-weight: 700
+}
+
 input {
   width: 25%;
   padding: 10px 0;
